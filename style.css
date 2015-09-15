@@ -1,0 +1,116 @@
+html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+#App {
+  background-color: #fff;
+  height: auto;
+  width: 60%;
+  min-width: 550px;
+  margin: 40px auto;
+  border: 1px solid black;
+}
+
+.header {
+  background-color: #6441A5;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#stream-search {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+.content-info {
+  margin: 5px;
+}
+
+.content-info p {
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+#results-info {
+  width: 50%;
+}
+
+#pager {
+  visibility: hidden;
+  width: 15%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#pager div, #pager p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-position {
+  margin: auto 10px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  cursor: pointer;
+}
+
+.arrow-right {
+  border-left: 6px solid black;
+}
+
+.arrow-left {
+  border-right:6px solid black;
+}
+
+.stream {
+  position: relative;
+  height: 90px;
+  margin: 15px 15px;
+}
+
+.stream-info {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 90px;
+  width: 350px;
+  margin-left: 170px;
+}
+
+.stream-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.stream-info a:hover {
+  text-decoration: underline;
+}
+
+.stream-info h2, .stream-description p {
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.stream-description {
+  margin-top: 5px;
+}

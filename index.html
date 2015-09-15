@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stream Search</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id='App'>
+
+    <div class='header'>
+      <form id='stream-search'>
+        <input type='search' placeholder='Search...' />
+        <input type='submit' value='Search' />
+      </form>
+    </div>
+
+    <div class='content'>
+      <div class='content-info'>
+        
+        <p id='results-info'>Total Results: <span>0</span></p>
+
+        <div id='pager'>
+          <div class='arrow arrow-left'></div>
+          <p class='page-position'><span>-</span>/<span>-</span></p>
+          <div class='arrow arrow-right'></div>
+        </div>
+
+      </div>
+
+      <div id='stream-list'>
+
+        <!-- <div class='stream'>
+          <a href='http://www.twitch.tv/professorbroman'>
+            <img src='http://static-cdn.jtvnw.net/previews-ttv/live_user_eghuk-160x90.jpg'>
+          </a>
+          <div class='stream-info'>
+            <a href='http://www.twitch.tv/professorbroman'>
+              <h2>Stream display name</h2>
+            </a>
+            <div class='stream-description'>
+              <p><a href="http://www.twitch.tv/directory/game/Fallout 2">Game Name</a> - 1234 viewers</p>
+              <p>Stream description text text text text text text text text text text text text...</p>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="streamSearch.js"></script>
+</body>
+</html>
