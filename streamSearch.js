@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     next: ''
   }
 
-  makeSearchRequest('https://api.twitch.tv/kraken/search/streams?q=starcraft');
+  // makeSearchRequest('https://api.twitch.tv/kraken/search/streams?q=starcraft');
 
   document.getElementById('stream-search').addEventListener('submit', function(e) {
     e.preventDefault();
