@@ -33,6 +33,8 @@ h2, p {
 
 .content-info {
   position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
 }
 
 .content-info p {
@@ -42,7 +44,7 @@ h2, p {
 #pager {
   visibility: hidden;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
 }
 
@@ -102,8 +104,13 @@ h2, p {
     margin: 40px auto;
   }
 
+  .content-info {
+    margin: 0 2%;
+  }
+
   .stream {
     width: 95%;
     margin: 10px 2%;
   }
+
 }
