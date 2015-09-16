@@ -76,19 +76,19 @@ h2 {
 
 .stream {
   position: relative;
-  height: 65px;
+  height: 80px;
   margin: 10px 0;
   overflow: hidden;
 }
 
 .stream img {
-  height: 65px;
+  height: 80px;
 }
 
 .stream-info {
   position: absolute;
   top: 0px;
-  margin-left: 126px;
+  margin-left: 152px;
 }
 
 .stream-info a {
