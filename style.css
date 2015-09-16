@@ -8,6 +8,11 @@ html, body {
 h2, p {
   margin: 0;
   text-overflow: ellipsis;
+  font: 0.8em sans-serif;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 #App {
@@ -38,7 +43,7 @@ h2, p {
 }
 
 .content-info p {
-  font-size: 12px;
+  font-size: .7em;
 }
 
 #pager {
@@ -71,15 +76,19 @@ h2, p {
 
 .stream {
   position: relative;
-  height: 90px;
+  height: 65px;
   margin: 10px 0;
   overflow: hidden;
+}
+
+.stream img {
+  height: 65px;
 }
 
 .stream-info {
   position: absolute;
   top: 0px;
-  margin-left: 170px;
+  margin-left: 126px;
 }
 
 .stream-info a {
@@ -95,6 +104,16 @@ h2, p {
   margin-top: 5px;
 }
 
+.mobile-link {
+  display: block;
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
 
 @media screen and (min-width: 800px) {
   
@@ -104,13 +123,29 @@ h2, p {
     margin: 40px auto;
   }
 
+  h2, p {
+    font-size: 1em;
+  }
+
   .content-info {
     margin: 0 2%;
   }
 
   .stream {
+    height: 65px;
     width: 95%;
     margin: 10px 2%;
   }
 
+  .stream img {
+    height: 90px;
+  }
+
+  .stream-info {
+    margin-left: 170px;
+  }
+
+  .mobile-link {
+    display: none;
+  }
 }

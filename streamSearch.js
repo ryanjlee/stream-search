@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     next: ''
   }
 
+  makeSearchRequest('https://api.twitch.tv/kraken/search/streams?q=starcraft');
+
   document.getElementById('stream-search').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -129,18 +131,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Sample Stream Node
   // ==================
   // <div class='stream'>
-  //   <div>
-  //     <a href='http://www.twitch.tv/professorbroman'>
-  //       <img src='http://static-cdn.jtvnw.net/previews-ttv/live_user_eghuk-160x90.jpg'>
-  //     </a>
-  //     <div class='stream-info'>
-  //       <h2>
-  //         <a href='http://www.twitch.tv/professorbroman'>Stream display name</a>
-  //       </h2>
-  //       <div class='stream-description'>
-  //         <p><a href="http://www.twitch.tv/directory/game/Fallout 2">Game Name</a> - 1234 viewers</p>
-  //         <p>Stream description text text text text text text text text text text text text...</p>
-  //       </div>
+  //   <a href='http://www.twitch.tv/professorbroman'>
+  //     <span class='mobile-link'></span>
+  //     <img src='http://static-cdn.jtvnw.net/previews-ttv/live_user_eghuk-160x90.jpg'>
+  //   </a>
+  //   <div class='stream-info'>
+  //     <h2>
+  //       <a href='http://www.twitch.tv/professorbroman'>Stream display name</a>
+  //     </h2>
+  //     <div class='stream-description'>
+  //       <p><a href="http://www.twitch.tv/directory/game/Fallout 2">Game Name</a> - 1234 viewers</p>
+  //       <p>Stream description text text text text text text text text text text text text...</p>
   //     </div>
   //   </div>
   // </div>
@@ -166,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     infoNode.appendChild(titleNode);
     infoNode.appendChild(descriptionNode);
 
+    imageNode.appendChild(createNode('span', '', 'class', 'mobile-link'));
     imageNode.appendChild(createNode('img', '', 'src', previewImage));
     
     streamNode.appendChild(imageNode);
